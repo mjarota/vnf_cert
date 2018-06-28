@@ -6,7 +6,7 @@ CONCURRENCY=2
 REQUESTS=10
 DATE=`date +"%D %T"`
 TESTID=`awk -v min=5 -v max=10 'BEGIN{srand(); print int(min+rand()*(max-min+1)*100000)}'`
-ADDRESS="http://10.0.0.20:80/"$TESTID
+ADDRESS="http://10.0.0.200:80/"$TESTID
 
 echo "DATE:" $DATE "CONCURRENCY:" $CONCURRENCY "REQUESTS:" $REQUESTS "TESTID:" $TESTID >> test_id
 
